@@ -1,33 +1,32 @@
 /**
- * @author Allan Vítor Siqueira Silva
-
+ * Projeto LiAllan
+ * @author Allan Vítor 
  */
 
-// Banner carrosel ------------
-const main = document.querySelector('main')
-const backgrounds = ['url(img/liallan.jpg)','url(img/liallan1.jpg)','url(img/liallan3.jpg)']
+// ==========================
+// 🎞️ Banner Carrossel
+// ==========================
+const main = document.querySelector('main');
+const backgrounds = [
+  'url(img/liallan1.jpg)',
+  'url(img/liallan.jpg)',
+  'url(img/liallan3.jpg)'
+];
 
-let indice = 0
+let indice = 0;
 
-function slider(){
-    indice ++
-    if (indice >= backgrounds.length) {
-        indice = 0
-    }
-    //troca da imagem de background no CSS
-main.style.backgroundImage = backgrounds[indice]
-main.style.transition = 'background-image 1s ease-in-out'
+function slider() {
+  indice = (indice + 1) % backgrounds.length;
+  main.style.backgroundImage = backgrounds[indice];
+  main.style.transition = 'background-image 1s ease-in-out';
 }
 
-setInterval(slider, 3000)
+// Troca de imagem a cada 3 segundos
+setInterval(slider, 3000);
 
-// fim do Banner carrosel --------------------------------------------------------------
-
-
-// Inserindo o ano na tag <span> no HTML
-let ano = document.getElementById('copyrightYear')
-
-// A linha abaixo obtem o ano atual do sistema
-let anoAtual = new Date().getFullYear()
-// A linha abaixo atribui o ano a tag <span>
-ano.innerHTML = anoAtual
+// ==========================
+// 📅 Inserção do ano atual
+// ==========================
+const ano = document.getElementById('copyrightYear');
+const anoAtual = new Date().getFullYear();
+ano.textContent = anoAtual;

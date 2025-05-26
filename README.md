@@ -1,4 +1,4 @@
-# 💕 Projeto Liallan
+# 💕 Projeto LiAllan
 
 Uma pequena surpresa feita por mim para comemorar **1 ano de namoro** com a Julia.  
 Simples, mas de coração.

@@ -30,3 +30,6 @@ Com carinho,
 
 ---
 ![GitHub License](https://img.shields.io/github/license/HubOpsVitor/projeto-liallan?style=for-the-badge)
+
+## Site 
+![](img/qrcode.png)

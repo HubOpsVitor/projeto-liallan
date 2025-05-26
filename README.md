@@ -27,3 +27,6 @@ Esse é só um lembrete digital do quanto você é importante pra mim.
 
 Com carinho,  
 **[Allan/HubOpsVitor]**
+
+---
+![GitHub License](https://img.shields.io/github/license/HubOpsVitor/projeto-liallan?style=for-the-badge)

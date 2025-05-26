@@ -1,0 +1,104 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+/* Estilo do banner principal */
+main {
+    min-height: 100vh;
+    background-image: url('img/liallan.jpg'); 
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background-image 1s ease-in-out;
+}
+
+/* Conteúdo central no banner */
+.banner-content {
+    text-align: center;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 90%;
+}
+
+.banner-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.banner-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.banner-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Spotify embed */
+.banner-content iframe {
+    width: 100%;
+    max-width: 400px;
+    height: 152px;
+    margin-top: 1.5rem;
+    border-radius: 12px;
+}
+
+/* Rodapé */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .banner-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-content {
+        padding: 1.5rem;
+    }
+
+    .banner-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .banner-content p {
+        font-size: 0.95rem;
+    }
+
+    .banner-content iframe {
+        height: 140px;
+    }
+}
